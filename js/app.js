@@ -35,16 +35,16 @@ const cardArray = [
     }
 
 ]
-const grid = document.querySelector.apply('.grid')
+const grid = document.querySelector('.grid')
 //create board
 function createBoard()
 {
-    for(let i =0;i<cardArray.length;i++)
+    for(let i =0;i < cardArray.length;i++)
     {
         var card = document.createElement('img')
         card.setAttribute('src', 'images/blank.png')
-        card.setAttribute('date-id',i)
-        card.addEventListener('click',flipcard)
+        card.setAttribute('data-id',i)
+       // card.addEventListener('click',flipcard)
         grid.appendChild(card)
     }
 }
